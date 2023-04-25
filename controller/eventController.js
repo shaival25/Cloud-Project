@@ -51,11 +51,16 @@ exports.getApprovedEvents = (req, res) => {
 
         } else {
             console.log(success)
+
             res.json({
                 status: 200,
                 msg: "Event Registered",
                 data: success
             })
+            res.header("Access-Control-Allow-Origin", "*");
+            res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
+            res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+            next();
         }
 
     })
