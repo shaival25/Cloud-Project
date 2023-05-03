@@ -8,6 +8,16 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        table {
+            table-layout: fixed;
+            width: 100%;
+        }
+        
+        td {
+            width: 50%;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,13 +26,14 @@
         <!-- The sidebar -->
         <div class="sidebar">
             <div class="img">
-                <img src="images/EveLogLogo.jpg">
+                <img src="images/Sail.jpg">
             </div>
-            <a class="active" href="/home">Home</a>
-            <a href="/eventProposal">EventProposal</a>
-            <a href="/eventRequested">eventsRequested</a>
-            <a href="/eventApproved">eventsApproved</a>
-            <a href="/eventRejected">eventsRejected</a>
+            <a class="active" href="/clubs">Clubs</a>
+
+            <a href="/event-proposal">Event Proposal</a>
+            <a href="/events-requested">Events Requested</a>
+            <a href="/events-approved">Events Approved</a>
+            <a href="/events-rejected">Events Rejected</a>
 
         </div>
 
@@ -30,22 +41,16 @@
 
     <div class="content">
 
-        <div class="navHeader">
+        <div class="navHeader" style="margin: 0;">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div style="background: rgb(17, 150, 0);" class="container-fluid">
 
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <h4>Home</h4>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <h1><b>Sciences &amp; Technical Clubs</b></h1>
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0"> </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                        <img style="width: 100px; height: 100px;" src="images/Pandit_Deendayal_Energy_University_logo.png">
+
                     </div>
                 </div>
             </nav>
@@ -57,17 +62,12 @@
             <div class="mid">
                 <div id="contentin">
                     <div class="contleftin">
-                        <h7>Sciences &amp; Technical Clubs</h7>
-                        <p>&nbsp;</p>
-                        <!-- <tr>
-                    <td><img src="images/osail.jpeg"></td>
-                </tr> -->
-                        <h5>Aatmann- <small>The Psychological club of PDEU</small>
-                            <a href="https://www.instagram.com/aatmann.pdeu" target="_blank"></a><img src="images/instagram.jpg" width="30px"></h5>
-                        <table border="0" width="100%">
+                        <h5>Aatmann - <small>The Psychological club of PDEU</small>
+                            <a href="https://www.instagram.com/aatmann.pdeu" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
+                        </h5>
+                        <table border="0">
                             <tbody>
                                 <tr>
-
                                     <td><img src="images/Aatmann.jpg"></td>
                                     <td><b>Contact:</b><br>
                                         <strong>Farhan Baig</strong><br> Mobile No.: +91 9601878977<br> Email: farhan.bbb20@sls.pdpu.ac.in<br>
@@ -80,10 +80,10 @@
                             It wishes to fulfill its aim by organising various events and playing various to raise awareness among the participants of the same.</p>
                         <p>&nbsp;</p>
 
-                        <h5>Alchemy <small>The Chemistry club of PDEU</small>
+                        <h5>Alchemy - <small>The Chemistry club of PDEU</small>
                             <a href="https://www.instagram.com/alchemy_pdeu" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
-                        <table border="0" width="100%">
+                        <table border="0">
                             <tbody>
                                 <tr>
                                     <td><img src="images/Alchemy.jpg"></td>
@@ -97,10 +97,10 @@
                             to our life and can be called as the diamond in the crown of life challenges.</p>
                         <p>&nbsp;</p>
 
-                        <h5>Anirveda- <small>The Techno Economy club of PDEU</small>
+                        <h5>Anirveda - <small>The Techno Economy club of PDEU</small>
                             <a href="https://www.instagram.com/anirveda_pdeu/" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
-                        <table border="0" width="100%">
+                        <table border="0">
                             <tbody>
                                 <tr>
                                     <td><img src="images/Technical9.jpg"></td>
@@ -114,10 +114,10 @@
                             accessible to all.</p>
                         <p>&nbsp;</p>
 
-                        <h5>Avionics- <small>The Aero Modelling club of PDEU</small>
+                        <h5>Avionics - <small>The Aero Modelling club of PDEU</small>
                             <a href="https://www.instagram.com/avionics_pdeu/" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
-                        <table border="0" width="100%">
+                        <table border="0">
                             <tbody>
                                 <tr>
                                     <td><img src="images/Technical7.jpg"></td>
@@ -134,7 +134,7 @@
                         <h5>Brahmand- <small>The Astronomy club of PDEU</small>
                             <a href="https://www.instagram.com/brahmand_pdeu" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
-                        <table border="0" width="100%">
+                        <table border="0">
                             <tbody>
                                 <tr>
                                     <td><img src="images/Technical1a.jpg"></td>
@@ -148,10 +148,10 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>Bulls &amp; Bears <small>The Finance club of PDEU</small>
+                        <h5>Bulls &amp; Bears - <small>The Finance club of PDEU</small>
                             <a href="https://www.instagram.com/bullsandbears_pdeu/" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
-                        <table border="0" width="100%">
+                        <table border="0">
                             <tbody>
                                 <tr>
                                     <td><img src="images/Bulls.jpg"></td>
@@ -165,10 +165,10 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>Cretus- <small>The Robotics and Automation club of PDEU</small>
+                        <h5>Cretus - <small>The Robotics and Automation club of PDEU</small>
                             <a href="https://www.instagram.com/cretus.pdeu/" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
-                        <table border="0" width="100%">
+                        <table border="0">
                             <tbody>
                                 <tr>
                                     <td><img src="images/Technical2.jpg"></td>
@@ -182,7 +182,7 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>Cube-i-Cult <small>The Cubing Club of PDEU</small>
+                        <h5>Cube-i-Cult - <small>The Cubing Club of PDEU</small>
                             <a href="https://www.instagram.com/cube_i_cult_pdeu/" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">
@@ -199,7 +199,7 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>Encode- <small>The Computer Science club of PDEU</small>
+                        <h5>Encode - <small>The Computer Science club of PDEU</small>
                             <a href="https://www.instagram.com/encode_pdeu/" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">
@@ -218,7 +218,7 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>Envirofreaks- <small>The Environmental club of PDEU</small>
+                        <h5>Envirofreaks - <small>The Environmental club of PDEU</small>
                             <a href="https://www.instagram.com/envirofreaks_pdeu/" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">
@@ -235,7 +235,7 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>Mind Ripple- <small>The Quizzing club of PDEU</small>
+                        <h5>Mind Ripple - <small>The Quizzing club of PDEU</small>
                             <a href="https://www.instagram.com/mindripplepdeu/" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">
@@ -253,7 +253,7 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>Respawn- <small>The E-Gaming club of PDEU</small>
+                        <h5>Respawn - <small>The E-Gaming club of PDEU</small>
                             <a href="https://www.instagram.com/respawn_pdeu/" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">
@@ -270,7 +270,7 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>SOM- <small>The Mathematics club of PDEU</small>
+                        <h5>SOM - <small>The Mathematics club of PDEU</small>
                             <a href="https://www.instagram.com/som_pdeu/" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">
@@ -287,7 +287,7 @@
                             in tiny units of learning, eschewing the attempt to tarnish the beauty mathematics reveals.</p>
                         <p>&nbsp;</p>
 
-                        <h5>Sorriso- <small>The Photography club of PDEU</small>
+                        <h5>Sorriso - <small>The Photography club of PDEU</small>
                             <a href="https://www.instagram.com/sorriso_photography/" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">
@@ -304,7 +304,7 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>Symmetry <small>The Graphic Designing club of PDEU</small>
+                        <h5>Symmetry - <small>The Graphic Designing club of PDEU</small>
                             <a href="https://www.instagram.com/symmetry_pdeu/" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">
@@ -322,7 +322,7 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>Synergy <small>The Entrepreneurial club of PDEU</small>
+                        <h5>Synergy - <small>The Entrepreneurial club of PDEU</small>
                             <a href="#" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">
@@ -340,7 +340,7 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>VGA- <small>The Film-Making club of PDEU</small>
+                        <h5>VGA - <small>The Film-Making club of PDEU</small>
                             <a href="https://www.instagram.com/vga_pdeu/" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">
@@ -358,7 +358,7 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>Step-Up- <small>The Fitness club of PDEU</small>
+                        <h5>Step-Up - <small>The Fitness club of PDEU</small>
                             <a href="#" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">
@@ -375,7 +375,7 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>Punnerva- <small>The Yoga club of PDEU</small>
+                        <h5>Punnerva - <small>The Yoga club of PDEU</small>
                             <a href="https://www.instagram.com/punnerva" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">
@@ -392,7 +392,7 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>Nucleus- <small>The Physics club of PDEU</small>
+                        <h5>Nucleus - <small>The Physics club of PDEU</small>
                             <a href="#" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">
@@ -410,7 +410,7 @@
                         <p>&nbsp;</p>
 
 
-                        <h5>The Network- <small>The Professional club of PDEU</small>
+                        <h5>The Network - <small>The Professional club of PDEU</small>
                             <a href="https://www.instagram.com/thenetwork_pdeu" target="_blank"><img src="images/instagram.jpg" width="30px"></a>
                         </h5>
                         <table border="0" width="100%">

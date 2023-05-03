@@ -1,21 +1,7 @@
 const eventModel = require("../models/eventModel")
 const couterModel = require("../models/counterModel")
 
-// exports.saveEvent =  (req,res)=>{
-//     let event = new eventModel(req.body)
-//     console.log(req.body)
-//     event.save().then((success,err)=>{
-//         if(err){
 
-//         } else{
-//             res.json({
-//                 status:200,
-//                 msg:"Event Registered",
-//                 data:success
-//             })
-//         }
-//     })
-// }   
 
 exports.getEvent = (req, res) => {
     eventModel.find({ eventstatus: "undefined" }).then((success, err) => {
@@ -65,7 +51,6 @@ exports.getApprovedEvents = (req, res) => {
 
 
 exports.saveEvent = (req, res) => {
-    // console.log("hidlknfkkaenkbkjsjbfjlsdbjhasvdhjav")
     let event = new eventModel(req.body)
     console.log(req.body)
     let id

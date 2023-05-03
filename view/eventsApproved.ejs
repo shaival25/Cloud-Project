@@ -51,33 +51,28 @@
         <!-- The sidebar -->
         <div class="sidebar">
             <div class="img">
-                <img src="images/EveLogLogo.jpg">
+                <img src="images/Sail.jpg">
             </div>
-            <a href="/home">Home</a>
-            <a href="/eventProposal ">EventProposal</a>
-            <a href="/eventRequested ">eventsRequested</a>
-            <a class="active " href="/eventApproved ">eventsApproved</a>
-            <a href="/eventRejected ">eventsRejected</a>
+            <a href="/clubs">Clubs</a>
+
+            <a href="/event-proposal">Event Proposal</a>
+            <a href="/events-requested">Events Requested</a>
+            <a class="active" href="/events-approved">Events Approved</a>
+            <a href="/events-rejected">Events Rejected</a>
         </div>
     </div>
     <div class="content ">
 
-        <div class="navHeader ">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="navHeader" style="margin: 0;">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div style="background: rgb(17, 150, 0);" class="container-fluid">
 
-                <div class="container-fluid ">
-                    <a class="navbar-brand " href="# ">
-                        <h4>Events Approved</h4>
-                    </a>
-                    <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
-                      <span class="navbar-toggler-icon "></span>
-                  </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent ">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 "> </ul>
-                        <form class="d-flex " role="search ">
-                            <input class="form-control me-2 " type="search " placeholder="Search " aria-label="Search ">
-                            <button class="btn btn-outline-success " type="submit ">Search</button>
-                        </form>
+                    <h1><b>Events Approved</b></h1>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0"> </ul>
+                        <img style="width: 100px; height: 100px;" src="images/Pandit_Deendayal_Energy_University_logo.png">
+
                     </div>
                 </div>
             </nav>
@@ -91,23 +86,18 @@
                     <table class="table table-bordered ">
                         <thead>
                             <tr>
-                                <th scope="col ">eventId</th>
-                                <th scope="col ">EventName</th>
-                                <th scope="col ">ClubName</th>
+                                <th scope="col ">Event Id</th>
+                                <th scope="col ">Event Name</th>
+                                <th scope="col ">Club Name</th>
                                 <th scope="col ">Venue</th>
                                 <th scope="col ">Dates</th>
-                                <th scope="col ">CordinatorName</th>
-                                <th scope="col ">CordinatorNo</th>
-                                <th scope="col ">expectedAudience</th>
-                                <!-- <th scope="col ">Actions
-                       
-                        </th> -->
+                                <th scope="col ">Cordinator Name</th>
+                                <th scope="col ">Cordinator No</th>
+                                <th scope="col ">Expected Audience</th>
                             </tr>
                         </thead>
                         <tbody id="data-output">
-
                         </tbody>
-
                     </table>
                 </div>
             </div>

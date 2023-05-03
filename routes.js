@@ -15,22 +15,19 @@ router.get('/getApproved', eventController.getApprovedEvents)
 router.get("", (req, res) => {
     res.render('home');
 })
-router.get("/eventProposal", (req, res) => {
+router.get("/event-proposal", (req, res) => {
     res.render('eventProposal');
 })
-router.get("/eventRequested", (req, res) => {
+router.get("/events-requested", (req, res) => {
     res.render('eventRequested');
 })
-router.get("", (req, res) => {
+router.get("/clubs", (req, res) => {
     res.render('home');
 })
-router.get("/home", (req, res) => {
-    res.render('home');
-})
-router.get("/eventApproved", (req, res) => {
+router.get("/events-approved", (req, res) => {
     res.render('eventsApproved');
 })
-router.get("/eventRejected", (req, res) => {
+router.get("/events-rejected", (req, res) => {
     res.render('eventsRejected');
 })
 
